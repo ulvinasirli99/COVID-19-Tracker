@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_back2"
+    tools:context=".Activity.GlobalNews">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/qlobal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Qlobal Statistika"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/active_cases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qlobal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Aktiv Xəstələr :"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/critical_cases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/active_cases"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Gərgin Xəstələr : "
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/new_cases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/critical_cases"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Yeni Yoluxanlar :"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/new_deaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_cases"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Yeni Ölənlər :"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/per_mln"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_deaths"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Yayılma Faizi :"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/total_cases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/per_mln"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Ümumi Yoluxanlar :"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/total_deaths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total_cases"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Ümumi Ölənlər :"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/total_recovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total_deaths"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Ümumi Sağalanlar :"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/aktiv_xesteler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/qlobal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/active_cases"
+        android:text="336,359"
+        android:textColor="@color/fb"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/gergin_xesteler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aktiv_xesteler"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@id/critical_cases"
+        android:text="14,800"
+        android:textColor="@color/task"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/yeni_yoluxanlar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gergin_xesteler"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@id/new_cases"
+        android:text="1,413"
+        android:textColor="@color/them"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/yeni_olenler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yeni_yoluxanlar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="29dp"
+        android:layout_toRightOf="@id/new_deaths"
+        android:text="26"
+        android:textColor="@color/vamp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/yayilma_faizi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yeni_olenler"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@id/per_mln"
+        android:text="60.6 %"
+        android:textColor="@color/push"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/umumi_yoluxanlar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/yayilma_faizi"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="31dp"
+        android:layout_toRightOf="@id/total_cases"
+        android:text="472,381"
+        android:textColor="@color/yellow1"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/umumi_olenler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/umumi_yoluxanlar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@id/total_deaths"
+        android:text="21,304"
+        android:textColor="@color/yellow"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/umumi_sagalanlar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/umumi_olenler"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="28dp"
+        android:layout_toRightOf="@id/total_recovered"
+        android:text="114,718"
+        android:textColor="@color/pushing"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

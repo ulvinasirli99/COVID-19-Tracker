@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/task"
+    tools:context=".Activity.Transition">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="#Evdə qal"
+        android:textColor="@color/yellow"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Xəbərlər üçün seçim edin..."
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/u_melumat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="25dp"
+        android:drawableLeft="@drawable/brus"
+        android:drawableRight="@drawable/ser"
+        android:text="Ümumi Məlumat"
+        android:textColor="@color/them"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/g_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/u_melumat"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="30dp"
+        android:drawableLeft="@drawable/brus"
+        android:drawableRight="@drawable/glo"
+        android:text="Global Xeberler"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nazirKecid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/u_melumat"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/brus"
+        android:drawableRight="@drawable/mesgge"
+        android:gravity="center"
+        android:text="Nazirlər Kabinetinin \n Xəbərləri"
+        android:textColor="@color/twist"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/nedir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nazirKecid"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="25dp"
+        android:drawableLeft="@drawable/brus"
+        android:drawableRight="@drawable/what"
+        android:gravity="center"
+        android:text="COVID-19 nədir?"
+        android:textColor="@color/bump"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
